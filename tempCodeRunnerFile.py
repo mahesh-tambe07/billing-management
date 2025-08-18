@@ -199,7 +199,7 @@ class Bill_App:
         cosm_en = Entry(F4,bd = 8,relief = GROOVE,textvariable = self.total_cosmetics)
         cosm_en.grid(row = 0,column = 1,ipady = 2,ipadx = 5)
 
-        #===================
+        #=====Developed By Mahesh ==============
         gro_lbl = Label(F4,font = ("times new roman",15,"bold"),fg = lbl_color,bg = 'Black',text = "Total Grocery")
         gro_lbl.grid(row = 1,column = 0,padx = 10,pady = 5)
         gro_en = Entry(F4,bd = 8,relief = GROOVE,textvariable = self.total_grocery)
@@ -217,7 +217,7 @@ class Bill_App:
         cosmt_en = Entry(F4,bd = 8,relief = GROOVE,textvariable = self.tax_cos)
         cosmt_en.grid(row = 0,column = 3,ipady = 2,ipadx = 5)
 
-        #=================
+        #======Developed By Mahesh ===========
         grot_lbl = Label(F4,font = ("times new roman",15,"bold"),fg = lbl_color,bg = 'Black',text = "Grocery Tax")
         grot_lbl.grid(row = 1,column = 2,padx = 30,pady = 5)
         grot_en = Entry(F4,bd = 8,relief = GROOVE,textvariable = self.tax_groc)
