@@ -280,6 +280,7 @@ class Bill_App:
         self.tax_other.set("Rs. "+str(round(self.total_other_prices*0.05)))
 
 #Function For Text Area
+    #===========Developed By Mahesh
     def welcome_soft(self):
         self.txt.delete('1.0',END)
         self.txt.insert(END,"------------- Welcome -------------\n")
