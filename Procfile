@@ -1,2 +1,1 @@
-web: gunicorn 
-tempCodeRunnerFile:app
+web: gunicorn tempCodeRunnerFile:app
