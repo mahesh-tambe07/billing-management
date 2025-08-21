@@ -9,10 +9,11 @@ def home():
 @app.route("/calculate", methods=["POST"])
 def calculate():
     data = request.json
-    # Example: assume data = {"items": [{"name": "Tea", "price": 10, "qty": 2}, {"name": "Coffee", "price": 20, "qty": 1}]}
-    
     total = 0
     for item in data.get("items", []):
         total += item["price"] * item["qty"]
-    
     return jsonify({"total": total})
+
+# Run the app only in local mode (Render will use gunicorn)
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=5000)
